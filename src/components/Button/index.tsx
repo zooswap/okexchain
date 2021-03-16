@@ -73,7 +73,6 @@ export const ButtonPrimary = styled(Base)`
   }
   &:hover {
     /*background: ${({ theme }) => darken(0.05, theme.primary1)};*/
-    background: linear-gradient(to right, #0094ec , #f537c3);
     background-origin: border-box;
     &::after {
       animation: ${sheen} 0.5s forwards;
@@ -177,6 +176,7 @@ export const ButtonSecondary = styled(Base)`
   }
   &:hover {
     border: 1px solid ${({ theme }) => theme.primary3};
+    opacity:0.8;
   }
   &:active {
     box-shadow: 0 0 0 1pt ${({ theme }) => theme.primary4};

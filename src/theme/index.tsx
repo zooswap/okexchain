@@ -63,7 +63,7 @@ export function colors(darkMode: boolean): Colors {
     //primary colors
     primary1: darkMode ? '#2F75EE' : '#2F75EE',
     primary2: darkMode ? '#0097fb' : '#FF8CC3',
-    primary3: darkMode ? '#00aff5' : '#FF99C9',
+    primary3: darkMode ? '#2F75EE' : '#2F75EE',
     primary4: darkMode ? '#376bad70' : '#F6DDE8',
     primary5: darkMode ? '#153d6f70' : '#ebebeb',
 

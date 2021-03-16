@@ -24,7 +24,7 @@ const PageWrapper = styled(AutoColumn)`
 `
 
 const VoteCard = styled(DataCard)`
-  background: ${({ theme }) => transparentize(0.5, theme.bg1)};
+  background: ${({ theme }) => transparentize(0, theme.bg1)};
   overflow: hidden;
   margin-bottom: 10px;
 `
@@ -47,10 +47,10 @@ export default function Saave() {
               </RowBetween>
               <RowBetween>
                 <div>
-                  <TYPE.white fontSize={14} color={theme.text2} style={{ paddingBottom: '10px' }}>
+                  <TYPE.white fontSize={14} color={theme.text1} style={{ paddingBottom: '10px' }}>
                     {`Stake your SUSHI into xSUSHI for ~15% APY. No impermanent loss, no loss of governance rights. Continuously compounding.`}
                   </TYPE.white>
-                  <TYPE.white fontSize={14} color={theme.text2} style={{ paddingBottom: '10px' }}>
+                  <TYPE.white fontSize={14} color={theme.text1} style={{ paddingBottom: '10px' }}>
                     {`xSUSHI automatically earn fees (0.05% of all swaps, including multichain swaps) proportional to your share of the SushiBar.`}
                   </TYPE.white>
                 </div>
