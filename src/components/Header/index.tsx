@@ -9,7 +9,7 @@ import styled from 'styled-components'
 
 // import Logo from '../../assets/svg/logo.svg'
 // import LogoDark from '../../assets/svg/logo_white.svg'
-
+import Settings from '../Settings'
 import Logo from '../../assets/newUI/logo.png'
 import LogoHover from '../../assets/newUI/logo_hover.png'
 
@@ -457,9 +457,10 @@ export default function Header() {
           </AccountElement>
         </HeaderElement>
         <HeaderElementWrap>
-          <StyledMenuButton onClick={() => toggleDarkMode()}>
+          <StyledMenuButton onClick={() => toggleDarkMode()} className="s-darkmodes">
             {darkMode ? <Moon size={20} /> : <Sun size={20} />}
           </StyledMenuButton>
+          <Settings />
           <Menu />
         </HeaderElementWrap>
       </HeaderControls>

@@ -21,8 +21,8 @@ import Toggle from '../Toggle'
 import TransactionSettings from '../TransactionSettings'
 
 const StyledMenuIcon = styled(Settings)`
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
 
   > * {
     stroke: ${({ theme }) => theme.text2};
@@ -179,7 +179,7 @@ export default function SettingsTab() {
         </ModalContentWrapper>
       </Modal>
       <StyledMenuButton onClick={toggle} id="open-settings-dialog-button">
-        <StyledMenuIcon />
+        <StyledMenuIcon className="s-open-settings-dialog-button" />
         {expertMode ? (
           <EmojiWrapper>
             <span role="img" aria-label="wizard-icon">

@@ -35,6 +35,7 @@ import { OpenClaimAddressModalAndRedirectToSwap, RedirectPathToSwapOnly, Redirec
 //import VotePage from './Vote/VotePage'
 
 import SushiBar from './SushiBar'
+import '../assets/o.css';
 
 // Additional Tools
 import Tools from './Tools'

@@ -1,0 +1,93 @@
+.s-header-create{
+	justify-content: flex-start;
+}
+.s-header-create-title {
+	margin-left: 5rem;
+}
+.s-header-idenicon{
+	background: url(./newUI/dot.png);
+	background-size: 100% 100%;
+}
+.s-header-idenicon svg{
+	display: none;
+}
+.s-darkmodes{
+	display: none;
+}
+.s-open-settings-dialog-button {
+	margin-left: 1rem;
+}
+/*右上角链接列表*/
+.s-top-links-btn{
+	border: none;
+	margin: 5px 1rem 2px 1rem;
+	padding: 0;
+	height: 24px;
+	width:24px;
+	background:url(./newUI/links.png) no-repeat 0 0;
+	background-size: 100% 100%;
+}
+.s-top-links-btn:hover,
+.s-top-links-btn:focus{
+	border:none;
+	outline:none;
+}
+.s-top-links {
+	min-width: 8.125rem;
+	box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.01), 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04),
+	0px 24px 32px rgba(0, 0, 0, 0.01);
+	padding: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	font-size: 1rem;
+	position: absolute;
+	top:3.5rem;
+	right: 0rem;
+	z-index: 100;
+	background-color: #fff;
+}
+.s-top-links::after{
+	content: ' ';
+	display: block;
+	width:0;
+	height:0;
+	border:20px solid #fff;
+	border-color:transparent transparent #fff transparent;
+	position: absolute;
+	top:-35px;
+	right:15px;
+}
+.s-top-links a{
+	border-bottom:1px solid #F4F4F4;
+}
+.s-top-links a>span{
+	padding-left: 2.3rem;
+	background-repeat: no-repeat;
+	background-position: 0.5rem 2px;
+	padding-right: 2rem;
+}
+.s-top-links .about{
+	background-image:url(./newUI/about.png);
+}
+.s-top-links .docs{
+}
+.s-top-links .medium{
+	background-image:url(./newUI/medium.png);
+}
+.s-top-links .code{
+	background-image:url(./newUI/github.png);
+}
+.s-top-links .twitter{
+	background-image:url(./newUI/twitter.png);
+}
+.s-top-links .discord{
+	background-image:url(./newUI/discord.png);
+}
+.s-top-links .analytics{
+	background-image:url(./newUI/trends.png);
+}
+.s-top-links .telegram{
+	background-image:url(./newUI/telegram.png);
+}
+.s-top-links .tools{
+}

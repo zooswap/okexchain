@@ -17,7 +17,6 @@ export default function SwapHeader() {
     <StyledSwapHeader>
       <RowBetween>
         <TYPE.black fontWeight={500}>确认兑换</TYPE.black>
-        <Settings />
       </RowBetween>
     </StyledSwapHeader>
   )

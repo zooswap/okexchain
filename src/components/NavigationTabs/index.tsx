@@ -73,12 +73,11 @@ export function SwapPoolTabs({ active }: { active: 'swap' | 'pool' }) {
 export function FindPoolTabs() {
   return (
     <Tabs>
-      <RowBetween style={{ padding: '1rem 1rem 0 1rem' }}>
+      <RowBetween style={{ padding: '1rem 1rem 0 1rem' }} className="s-header-create">
         <HistoryLink to="/pool">
           <StyledArrowLeft />
         </HistoryLink>
-        <ActiveText>Import Pool</ActiveText>
-        <Settings />
+        <ActiveText className="s-header-create-title">Import Pool</ActiveText>
       </RowBetween>
     </Tabs>
   )
@@ -90,7 +89,7 @@ export function AddRemoveTabs({ adding, creating }: { adding: boolean; creating:
 
   return (
     <Tabs>
-      <RowBetween style={{ padding: '1rem 1rem 0 1rem' }}>
+      <RowBetween style={{ padding: '1rem 1rem 0 1rem' }} className="s-header-create">
         <HistoryLink
           to="/pool"
           onClick={() => {
@@ -99,8 +98,7 @@ export function AddRemoveTabs({ adding, creating }: { adding: boolean; creating:
         >
           <StyledArrowLeft />
         </HistoryLink>
-        <ActiveText>{creating ? 'Create a pair' : adding ? 'Add Liquidity' : 'Remove Liquidity'}</ActiveText>
-        <Settings />
+        <ActiveText className="s-header-create-title">{creating ? 'Create a pair' : adding ? 'Add Liquidity' : 'Remove Liquidity'}</ActiveText>
       </RowBetween>
     </Tabs>
   )

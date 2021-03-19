@@ -136,31 +136,31 @@ function StatusIcon({ connector }: { connector: AbstractConnector }) {
     return <Identicon />
   } else if (connector === walletconnect) {
     return (
-      <IconWrapper size={16}>
+      <IconWrapper size={16} className="s-wallet-connect">
         <img src={WalletConnectIcon} alt={'Wallet Connect'} />
       </IconWrapper>
     )
   } else if (connector === lattice) {
     return (
-      <IconWrapper size={16}>
+      <IconWrapper size={16} className="s-wallet-connect">
         <img src={LatticeIcon} alt={'Lattice'} />
       </IconWrapper>
     )
   } else if (connector === walletlink) {
     return (
-      <IconWrapper size={16}>
+      <IconWrapper size={16} className="s-wallet-connect">
         <img src={CoinbaseWalletIcon} alt={'Coinbase Wallet'} />
       </IconWrapper>
     )
   } else if (connector === fortmatic) {
     return (
-      <IconWrapper size={16}>
+      <IconWrapper size={16} className="s-wallet-connect">
         <img src={FortmaticIcon} alt={'Fortmatic'} />
       </IconWrapper>
     )
   } else if (connector === portis) {
     return (
-      <IconWrapper size={16}>
+      <IconWrapper size={16} className="s-wallet-connect">
         <img src={PortisIcon} alt={'Portis'} />
       </IconWrapper>
     )
