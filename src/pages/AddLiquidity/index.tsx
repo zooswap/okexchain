@@ -327,7 +327,7 @@ export default function AddLiquidity({
             hash={txHash}
             content={() => (
               <ConfirmationModalContent
-                title={noLiquidity ? 'You are creating a pool' : 'You will receive'}
+                title={noLiquidity ? 'You are creating a pool' : '你将收到'}
                 onDismiss={handleDismissConfirmation}
                 topContent={modalHeader}
                 bottomContent={modalBottom}
@@ -415,10 +415,10 @@ export default function AddLiquidity({
 
             {addIsUnsupported ? (
               <ButtonPrimary disabled={true}>
-                <TYPE.main mb="4px">Unsupported Asset</TYPE.main>
+                <TYPE.main mb="4px">不支持的资产</TYPE.main>
               </ButtonPrimary>
             ) : !account ? (
-              <ButtonLight onClick={toggleWalletModal}>Connect Wallet</ButtonLight>
+              <ButtonLight onClick={toggleWalletModal}>链接钱包</ButtonLight>
             ) : (
               <AutoColumn gap={'md'}>
                 {(approvalA === ApprovalState.NOT_APPROVED ||

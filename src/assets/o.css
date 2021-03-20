@@ -1,3 +1,10 @@
+.s-warning {
+	display: inline-block;
+	width:24px;
+	height:24px;
+	background:url(./newUI/warning.png) no-repeat 0 0;
+	background-size: 100% 100%;
+}
 .s-header-create{
 	justify-content: flex-start;
 }

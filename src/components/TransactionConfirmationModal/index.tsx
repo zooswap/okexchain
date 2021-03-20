@@ -9,7 +9,7 @@ import { RowBetween } from '../Row'
 import { AlertTriangle, ArrowUpCircle } from 'react-feather'
 import { ButtonPrimary } from '../Button'
 import { AutoColumn, ColumnCenter } from '../Column'
-import Circle from '../../assets/images/blue-loader.svg'
+import Circle from '../../assets/newUI/waiting.png'
 
 import { getExplorerLink } from '../../utils'
 import { useActiveWeb3React } from '../../hooks'
@@ -44,7 +44,7 @@ function ConfirmationPendingContent({ onDismiss, pendingText }: { onDismiss: () 
         </ConfirmedIcon>
         <AutoColumn gap="12px" justify={'center'}>
           <Text fontWeight={500} fontSize={20}>
-            Waiting For Confirmation
+          等待确认中
           </Text>
           <AutoColumn gap="12px" justify={'center'}>
             <Text fontWeight={600} fontSize={14} color="" textAlign="center">

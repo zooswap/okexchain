@@ -407,7 +407,7 @@ export default function Swap() {
           <BottomGrouping style={{ paddingBottom: '1rem' }}>
             {swapIsUnsupported ? (
               <ButtonPrimary disabled={true}>
-                <TYPE.main mb="4px">Unsupported Asset</TYPE.main>
+                <TYPE.main mb="4px">不支持的资产</TYPE.main>
               </ButtonPrimary>
             ) : !account ? (
               <ButtonLight onClick={toggleWalletModal}>链接钱包</ButtonLight>
@@ -515,7 +515,7 @@ export default function Swap() {
                   {Boolean(trade) && (
                     <RowBetween align="center">
                       <Text fontWeight={500} fontSize={14} color={theme.text3}>
-                        Price
+                        价格
                       </Text>
                       <TradePrice
                         price={trade?.executionPrice}

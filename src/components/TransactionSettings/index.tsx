@@ -186,8 +186,7 @@ export default function SlippageTabs({ rawSlippage, setRawSlippage, deadline, se
               {!!slippageInput &&
               (slippageError === SlippageError.RiskyLow || slippageError === SlippageError.RiskyHigh) ? (
                 <SlippageEmojiContainer>
-                  <span role="img" aria-label="warning">
-                    ⚠️
+                  <span role="img" aria-label="warning" className="s-warning">
                   </span>
                 </SlippageEmojiContainer>
               ) : null}

@@ -159,7 +159,7 @@ export function useDerivedMintInfo(
 
   let error: string | undefined
   if (!account) {
-    error = 'Connect Wallet'
+    error = '链接钱包'
   }
 
   if (pairState === PairState.INVALID) {
@@ -167,17 +167,17 @@ export function useDerivedMintInfo(
   }
 
   if (!parsedAmounts[Field.CURRENCY_A] || !parsedAmounts[Field.CURRENCY_B]) {
-    error = error ?? 'Enter an amount'
+    error = error ?? '请输入金额'
   }
 
   const { [Field.CURRENCY_A]: currencyAAmount, [Field.CURRENCY_B]: currencyBAmount } = parsedAmounts
 
   if (currencyAAmount && currencyBalances?.[Field.CURRENCY_A]?.lessThan(currencyAAmount)) {
-    error = 'Insufficient ' + currencies[Field.CURRENCY_A]?.getSymbol(chainId) + ' balance'
+    error = 'Insufficient ' + currencies[Field.CURRENCY_A]?.getSymbol(chainId) + ' 余额'
   }
 
   if (currencyBAmount && currencyBalances?.[Field.CURRENCY_B]?.lessThan(currencyBAmount)) {
-    error = 'Insufficient ' + currencies[Field.CURRENCY_B]?.getSymbol(chainId) + ' balance'
+    error = 'Insufficient ' + currencies[Field.CURRENCY_B]?.getSymbol(chainId) + ' 余额'
   }
 
   return {

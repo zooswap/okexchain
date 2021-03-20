@@ -98,7 +98,7 @@ export function AddRemoveTabs({ adding, creating }: { adding: boolean; creating:
         >
           <StyledArrowLeft />
         </HistoryLink>
-        <ActiveText className="s-header-create-title">{creating ? 'Create a pair' : adding ? 'Add Liquidity' : 'Remove Liquidity'}</ActiveText>
+        <ActiveText className="s-header-create-title">{creating ? 'Create a pair' : adding ? '添加流动性' : '删除流动性'}</ActiveText>
       </RowBetween>
     </Tabs>
   )

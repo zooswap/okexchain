@@ -6,7 +6,7 @@ import Column, { AutoColumn } from 'components/Column'
 import styled from 'styled-components'
 import { X, PlusCircle } from 'react-feather'
 import ComingSoonImage from '../../assets/images/coming-soon.png'
-import BentoBox from '../../assets/images/bento-color.png'
+import BentoBox from '../../assets/newUI/logo.png'
 import Kashi from '../../assets/images/kashi-color-flat.png'
 
 const Wrapper = styled.div`
